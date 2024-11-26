@@ -44,22 +44,22 @@ A simple Android app developed using Java that supports **Google Sign-In** and *
 
 ### Key Code Files
 
-MainActivity.java: Initializes Firebase and navigates to the LoginPage if the user is not logged in.
-LoginPage.java: Implements Google Sign-In and Phone Authentication with Firebase.
-ProfileFragment.java: Displays profile information and includes the “Win Certificate” button.
-WinCertificateActivity.java: Handles the 30-second timer and allows the user to submit their answer to win a certificate.
-HomePage.java: Displays the home screen with bottom navigation tabs.
+1. MainActivity.java: Initializes Firebase and navigates to the LoginPage if the user is not logged in.
+2. LoginPage.java: Implements Google Sign-In and Phone Authentication with Firebase.
+3. ProfileFragment.java: Displays profile information and includes the “Win Certificate” button.
+4. WinCertificateActivity.java: Handles the 30-second timer and allows the user to submit their answer to win a certificate.
+5. HomePage.java: Displays the home screen with bottom navigation tabs.
 
 ### Firebase Integration
 
 To enable Firebase Authentication:
-	•	Enable Google Sign-In and Phone Authentication in Firebase Console.
-	•	Set up SHA-1 fingerprint in Firebase for Google Sign-In.
-	•	Use Firebase’s FirebaseAuth API to manage user authentication.
+1. Enable Google Sign-In and Phone Authentication in Firebase Console.
+2. Set up SHA-1 fingerprint in Firebase for Google Sign-In.
+3. Use Firebase’s FirebaseAuth API to manage user authentication.
 
 #### UI Screens
 
-	•	LoginPage: The user can sign in with Google or via Phone Number.
-	•	HomePage: After login, the user is directed to the HomePage with four tabs: Certificate, Profile, Chat, and Score.
-	•	ProfileTab: Contains user information and a button to “Win Certificate”.
-	•	WinCertificateActivity: Asks the user a question, starts a countdown, and allows them to submit their answer for a certificate.
+1. LoginPage: The user can sign in with Google or via Phone Number.
+2. HomePage: After login, the user is directed to the HomePage with four tabs: Certificate, Profile, Chat, and Score.
+3. ProfileTab: Contains user information and a button to “Win Certificate”.
+4. WinCertificateActivity: Asks the user a question, starts a countdown, and allows them to submit their answer for a certificate.

@@ -32,15 +32,15 @@ A simple Android app developed using Java that supports **Google Sign-In** and *
    ```bash
    git clone https://github.com/yourusername/yourproject.git
 
-2.	Open the project in Android Studio.
-3.	Configure Firebase:
+2. Open the project in Android Studio.
+3. Configure Firebase:
 	•	Go to Firebase Console.
 	•	Add a new project, then add your Android app to the Firebase project.
 	•	Download the google-services.json file and place it in the app/ folder of your project.
 	•	Enable Google Sign-In and Phone Authentication in the Firebase Console.
-4.	Install dependencies:
+4. Install dependencies:
 	•	Ensure you have the necessary dependencies set up in your build.gradle files (both project-level and app-level).
-5.	Run the app:
+5. Run the app:
 	•	Build and run the app on an Android emulator or device.
 
 Key Code Files

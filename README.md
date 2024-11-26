@@ -30,50 +30,36 @@ A simple Android app developed using Java that supports **Google Sign-In** and *
 
 1. **Clone this repository**:
    ```bash
-   git clone https://github.com/yourusername/yourproject.git
-
+   git clone https://github.com/yourusername/yourproject.git```
 2. Open the project in Android Studio.
 3. Configure Firebase:
-	•	Go to Firebase Console.
-	•	Add a new project, then add your Android app to the Firebase project.
-	•	Download the google-services.json file and place it in the app/ folder of your project.
-	•	Enable Google Sign-In and Phone Authentication in the Firebase Console.
+   Go to Firebase Console.
+   Add a new project, then add your Android app to the Firebase project.
+   Download the google-services.json file and place it in the app/ folder of your project.
+   Enable Google Sign-In and Phone Authentication in the Firebase Console.
 4. Install dependencies:
-	•	Ensure you have the necessary dependencies set up in your build.gradle files (both project-level and app-level).
+   Ensure you have the necessary dependencies set up in your build.gradle files (both project-level and app-level).
 5. Run the app:
-	•	Build and run the app on an Android emulator or device.
+   Build and run the app on an Android emulator or device.
 
-Key Code Files
+### Key Code Files
 
-	1.	MainActivity.java: Initializes Firebase and navigates to the LoginPage if the user is not logged in.
-	2.	LoginPage.java: Implements Google Sign-In and Phone Authentication with Firebase.
-	3.	ProfileFragment.java: Displays profile information and includes the “Win Certificate” button.
-	4.	WinCertificateActivity.java: Handles the 30-second timer and allows the user to submit their answer to win a certificate.
-	5.	HomePage.java: Displays the home screen with bottom navigation tabs.
+MainActivity.java: Initializes Firebase and navigates to the LoginPage if the user is not logged in.
+LoginPage.java: Implements Google Sign-In and Phone Authentication with Firebase.
+ProfileFragment.java: Displays profile information and includes the “Win Certificate” button.
+WinCertificateActivity.java: Handles the 30-second timer and allows the user to submit their answer to win a certificate.
+HomePage.java: Displays the home screen with bottom navigation tabs.
 
-Firebase Integration
+### Firebase Integration
 
 To enable Firebase Authentication:
 	•	Enable Google Sign-In and Phone Authentication in Firebase Console.
 	•	Set up SHA-1 fingerprint in Firebase for Google Sign-In.
 	•	Use Firebase’s FirebaseAuth API to manage user authentication.
 
-UI Screens
+#### UI Screens
 
 	•	LoginPage: The user can sign in with Google or via Phone Number.
 	•	HomePage: After login, the user is directed to the HomePage with four tabs: Certificate, Profile, Chat, and Score.
 	•	ProfileTab: Contains user information and a button to “Win Certificate”.
 	•	WinCertificateActivity: Asks the user a question, starts a countdown, and allows them to submit their answer for a certificate.
-
-Additional Notes
-
-	•	This project uses Firebase Realtime Database to store user data and certificates.
-	•	The Win Certificate functionality uses a simple countdown timer to add an interactive element for the user.
-	•	All Firebase-related logic is handled through the Firebase SDK, including Google Sign-In and Phone Authentication.
-
-To Add More Features:
-
-	•	Add a Chat Tab where users can chat with others.
-	•	Add a Score Tab that stores user achievements or points.
-
- 
